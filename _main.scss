@@ -1,0 +1,14 @@
+@import "_utils";
+
+html {
+    font-family: $ff;
+}
+
+body {
+    max-width: 1440px;
+    height: 50rem;
+    background-color: $light-grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,104 @@
+@import "_utils";
+
+.card {
+    width: 45%;
+    height: 450px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    box-shadow: 0 1px 50px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+}
+
+.top {
+    padding: $around;
+    background-color: white;
+    border-radius: 0.5rem 0.5rem 0 0;
+
+    h3 {
+        color: $cyan;
+        font-size: 21px;
+        margin-bottom: 1.2rem;
+    }
+    h4 {
+        color: $b-yellow;
+        margin-bottom: 0.75rem;
+    }
+    p {
+        width: 94%;
+        line-height: 22px;
+        font-weight: $ff-bold;
+        color: hsla(216, 22%, 67%, 0.6);
+        font-size: 14px;
+    }
+}
+
+.bottom {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border-radius: 0 0 0.5rem 0.5rem;
+
+    h4 {
+        margin-bottom: 1rem;
+        color: $light-grey; 
+    }
+
+    .left {
+        padding: $around;
+        background-color: $cyan;
+        border-radius: 0 0 0 0.5rem;
+
+        .price {
+            float: left;
+            color: $light-grey;
+            font-size: 30px;
+            font-weight: $ff-bold;
+        }
+
+        span {
+            display: inline-block;
+            font-size: 13px;
+            padding: 0.675rem 0.75rem;
+            margin-bottom: .5rem;
+            color: hsla(203, 44%, 93%, 0.5);
+        }
+
+        .ad {
+            font-size: 15px;
+            color: hsla(0, 0%, 100%, 0.7);
+            padding-bottom: 2rem;
+        }
+
+        button {
+            padding: 0.85rem 0;
+            width: 100%;
+            font-family: $ff;
+            font-weight: $ff-bold;
+            font-size: 15px;
+            color: hsla(0, 0%, 100%, 0.801);
+            background-color: $b-yellow;
+            border: none;
+            border-radius: 0.3rem;
+            cursor: pointer;
+            box-shadow: 0 5px 7px 1px rgba(0, 0, 0, 0.1);
+        }
+    }
+    .right {
+        padding: calc($around + 0.2rem);
+        background-color: hsla(179, 62%, 43%, 0.8);
+        border-radius: 0 0 0.5rem 0;
+
+        h4 { margin-bottom: 1rem; }
+
+        ul {
+            width: 90%;
+            font-size: 13px;
+            color: hsla(203, 44%, 93%, 0.6);
+            line-height: 20px;
+
+            li {
+                list-style: none;
+                display: inline-block;
+            }
+        }
+    }
+}
